@@ -17,4 +17,10 @@ public class CabService {
 	
 	return totalfare;
 	}
+	
+	public double totalfareforMultipleride(final double totalfare2,final int numofride)
+	{
+		double totalfareforMultipleride=totalfare2* numofride;
+		return totalfareforMultipleride;
+	}
 }
