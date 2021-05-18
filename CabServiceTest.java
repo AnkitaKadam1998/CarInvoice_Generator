@@ -41,5 +41,18 @@ public class CabServiceTest {
 			
 			assertEquals(0,totalfare,0);
 		}
+	
+	@Test
+	public void testCalculatorFare_should_return_total_fare_multipleride()
+		{
+			CabService cabservice = new CabService();
+			
+			final double distance=2.3;
+			final int minute=7;
+			final int numofride=3;
+			double totalfare= cabservice.calculatefare(distance,minute);
+			double totalfareformultipleride=cabservice.totalfareforMultipleride(totalfare, numofride);
+			assertEquals(90,totalfare,0);
+		}
 
 }
