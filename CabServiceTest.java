@@ -45,6 +45,7 @@ public void testCalculateTotalFare_Should_ReturnTotalFare_forMultipleRides() {
 }
 
 @Test
+<<<<<<< HEAD
 public void testCalculateTotalFare_Should_ReturnZero_TotalFare_forMultipleRides() {	
 	
 	Ride [] rides= {new Ride(0.0,0),
@@ -55,10 +56,13 @@ public void testCalculateTotalFare_Should_ReturnZero_TotalFare_forMultipleRides(
 }
 
 @Test
+=======
+>>>>>>> da311cdb0fa6f7439ec56693cf52e1e7f0900dbd
 public void test_shouldReturn_TotalFare_averageFarePerRide_and_numOfRides() {	
 	Ride [] rides= {new Ride(2.0,5),
 					new Ride(0.1,1)
 					};
+<<<<<<< HEAD
 
 	InvoiceSummary invoiceSummary = cabService.calculateTotalFare(rides);
 	InvoiceSummary expected = new InvoiceSummary(2, 30, 15);
@@ -127,4 +131,11 @@ public void givenUserId_shouldReturn_InvalidInputException() throws InvalidInput
 	InvoiceRecords invoicerecords = cabService.findInvoice(user);
 	assertEquals(null, invoicerecords);	
 }
+=======
+
+	InvoiceSummary invoiceSummary = cabService.calculateTotalFare(rides);
+	InvoiceSummary expected = new InvoiceSummary(2, 30, 15);
+	assertEquals(expected, invoiceSummary);	
+}	
+>>>>>>> da311cdb0fa6f7439ec56693cf52e1e7f0900dbd
 }
