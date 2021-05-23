@@ -1,7 +1,6 @@
 package com.tdd_day30;
 
 public class InvoiceSummary {
-	
 	private final int numofRides;
 	private final double totalFare;
 	private final double averageFare;
@@ -27,5 +26,4 @@ public class InvoiceSummary {
 			return false;
 		return true;
 	}
-
 }
