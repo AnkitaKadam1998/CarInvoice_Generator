@@ -1,3 +1,4 @@
+
 package com.tdd_day30;
 
 public class Ride {
